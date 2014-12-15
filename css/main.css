@@ -1,0 +1,628 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html,
+   button,
+   input,
+   select,
+   textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+*, *:before, *:after {
+
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+ audio,
+ canvas,
+ img,
+ video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+   .browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+   p {
+    margin:0rem 0 1.25rem 0;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Vollkorn', serif;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 1.75rem; 
+}
+
+h2 {
+    font-size: 1.5rem; 
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.25rem;
+}
+
+label.required {
+}
+
+label.required:after {
+    content:"*";
+    color: rgb(158, 0, 0);
+    margin-left: 3px;
+}
+
+@media (min-width: 768px) {
+    p {
+        margin:0rem 0 1.75rem 0;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    h1 {
+        font-size: 2.50rem; 
+    }
+
+    h2 {
+        font-size: 1.75rem; 
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+    label {
+        font-size: 1.50rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    p {
+        margin:0rem 0 2rem 0;
+        font-size: 1.50rem;
+        line-height: 2.5rem;
+    }
+    h1 {
+        font-size: 2.75rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    h3 {
+        font-size: 1.50rem;
+    }
+    label {
+        display: block;
+        font-family: 'Vollkorn', serif;
+        font-size: 1.75rem;
+    }
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+   body {
+    background-color: rgb(244,189,109);
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    background-size: cover;
+    background-color: #FFF;
+}
+
+/* ==========================================================================
+   Fade In
+   ========================================================================== */
+
+   @media (min-width: 768px) {
+
+    p,h1,h2,h3,li,a {
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+        -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+    }
+
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Firefox < 16 */
+    @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Safari, Chrome and Opera > 12.1 */
+    @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Opera < 12.1 */
+    @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+   a {
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: color .25s ease-in-out,background .25s ease-in-out;
+    transition: color .25s ease-in-out,background .25s ease-in-out;
+}
+
+a:hover {
+    color: #595959;
+}
+
+a:after {
+    border-bottom: 1px solid #333;
+    display: block;
+    width: 100%;
+    height: 0;
+    position: relative;
+    overflow: visible;
+    content: "";
+    top: -4px;
+    -webkit-transition: border-color .25s ease-in-out;
+    transition: border-color .25s ease-in-out;
+}
+
+a:hover:after {
+    border-color: #595959;
+}
+
+/* ==========================================================================
+   Da Grid
+   ========================================================================== */
+   section {
+    position: relative;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.row {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+
+@media (min-width: 768px) { 
+    section {
+        position: relative;
+        padding: 5rem 1rem 4rem 1rem;
+    }
+
+    .row {
+        max-width: 700px;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+
+    .row {
+        max-width: 900px;
+    }
+}
+
+
+.wrap {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.col-left {
+    width: 50%;
+    float: left;
+}
+
+.col-right {
+    width: 50%;
+    float: left;
+}
+
+/* ==========================================================================
+   Button Styles
+   ========================================================================== */
+
+
+   .btn {
+    border: 2px solid #fff;
+    color: #fff !important;
+    background: transparent;
+    clear: both;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-shadow: none !important;
+    -webkit-transition: color .25s ease-in-out,background .25s ease-in-out;
+    transition: color .25s ease-in-out,background .25s ease-in-out;
+}
+
+@media (min-width: 768px) { 
+    .btn {
+        width: inherit;
+        padding: 15px 25px;
+    }
+
+    .btn--submit {
+        max-width: 200px;
+    }
+
+}
+
+.btn:after {
+    border: 0 !important;
+}
+
+.btn:hover, .btn--active {
+    color: #333 !important;
+    background-color: #FFF;
+}
+
+.btn--dark {
+    border: 2px solid #333;
+    color: #333 !important;
+    box-shadow: none !important;
+}
+
+.btn--dark:hover {
+    color: #FFF !important;
+    background-color: rgb(158, 0, 0);
+    border-color: rgb(158, 0, 0);
+}
+
+/* ==========================================================================
+   Shadows, so mysterious!
+   ========================================================================== */
+
+   .section__shadow {
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+/* ==========================================================================
+   Section Modifiers
+   ========================================================================== */
+
+.section--overlay, .section--overlay a{
+    color: #FFF;
+    text-shadow: 0 0 5px #000;
+}
+
+.section--overlay a{
+    text-decoration: none;
+}
+
+.section--overlay a:after{
+    border-bottom: 1px solid #FFF;
+}
+
+.section--overlay a:hover {
+    color: #DADADA;
+}
+
+.section--overlay a:hover:after {
+    border-color: #DADADA;
+}
+
+.section--dark {
+    background-color: #222;
+    color: #FFF;
+}
+
+.section--lt {
+    background: linear-gradient(rgb(255, 255, 255), rgb(245, 245, 245)); /* Standard syntax */
+    overflow: visible;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.02);
+    z-index: 2;
+}
+
+.section--lt-gray {
+    background-color: #EDEDED;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.02);
+    overflow: visible;
+    z-index: 1;
+}
+
+.section--footer {
+    text-align: center;
+}
+
+.section--footer a{
+    text-decoration: none;
+}
+
+.section--dark a{
+    color: #FFF;
+}
+
+.section--overlay {
+    z-index: 0;
+}
+
+/* Section Backgrounds */
+
+.svg-background {
+    display: none;
+}
+
+.section--overlay.section--sun-rays {
+    background: url('/img/background-primary.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (min-width: 768px) { 
+    .svg-background {
+        position:absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        z-index: -1;
+    }
+    .section--overlay.section--sun-rays {
+        background: transparent;
+    }
+}
+
+.section--overlay.section--tertiary {
+    background: url('/img/background-tertiary.png');
+    background-size: cover;
+}
+
+/* ==========================================================================
+   Section Molecules
+   ========================================================================== */
+
+.section__social ul{
+    padding: 0;
+    list-style: none;
+    text-align: justify;
+    font-size: 0.1px;
+}
+
+.section__social .break{
+    width: 100%;
+    height: 0;
+}
+
+.section__social ul > li{
+    margin: 0 0 2rem 0;
+    display: inline-block;
+    font-size: 2rem;
+    width: 33.3%;
+    text-align: center;
+
+}
+
+.section__social ul > li:last-child{
+    margin-right: 0;
+}
+
+
+@media (min-width: 1024px) {
+    .section__social ul > li{
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .section__social ul > li{
+        margin: 0 3rem .5rem 0;
+        font-size: 2rem;
+        width: inherit;
+    }
+}
+
+
+.section__social ul > li a {
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    color: #BABABA;
+    box-shadow: 0px 2px 0px #1F1F1F;
+    -webkit-transition: color .25s ease-in-out,background .25s ease-in-out;
+    transition: color .25s ease-in-out,background .25s ease-in-out;
+}
+
+.icon-bicycle {
+    position: relative;
+    left: -5px;
+}
+
+.section__social ul > li a:hover {
+    color: #FFF;
+    background-color: #494949;
+}
+
+.section__social ul > li a:after{
+    border: none;
+}
+
+.section__ctas {
+    text-align: center;
+}
+
+.section__overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .95;
+    z-index: 0;
+    background-color: #333;
+}
+
+@media (min-width: 768px) {
+
+    .section__overlay {
+        -webkit-transition: background 1s ease-in-out;
+        transition: background 1s ease-in-out;
+    }
+
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+input, textarea {
+    width: 100%;
+    background-color: #EFEFEF;
+    border: 0;
+    box-shadow: 0px 2px 0px #D7D7D7;
+    padding: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.email, .url-right {
+    width:100%;
+    float: none;
+}
+
+@media (min-width: 768px) {
+    .email {
+        width:50%;
+        float: left;
+    }
+
+    .url-right {
+        width:44%;
+        float: right;
+    }
+}
