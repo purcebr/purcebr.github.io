@@ -376,7 +376,7 @@ a:hover:after {
     border: 0 !important;
 }
 
-.btn:hover, .btn--active {
+.btn:hover, .btn--active.btn {
     color: #333 !important;
     background-color: #FFF;
 }
