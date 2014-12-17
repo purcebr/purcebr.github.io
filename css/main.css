@@ -529,13 +529,20 @@ a:hover:after {
     font-size: 2rem;
     width: 33.3%;
     text-align: center;
+}
 
+
+
+ul::after {
+    width: 100%; 
+    display: inline-block; 
+    content: "."; 
+    visibility: hidden
 }
 
 .section__social ul > li:last-child{
     margin-right: 0;
 }
-
 
 @media (min-width: 1024px) {
     .section__social ul > li{
@@ -549,6 +556,10 @@ a:hover:after {
         font-size: 2rem;
         width: inherit;
     }
+    .section__social ul > li.blank{
+        display: none;
+    }
+
 }
 
 
