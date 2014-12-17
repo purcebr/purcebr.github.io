@@ -472,6 +472,11 @@ a:hover:after {
     display: none;
 }
 
+.svg-background img{
+    width: 100%; 
+    height: 100%;
+}
+
 .section--overlay.section--sun-rays {
     background: url('/img/background-primary.png');
     -webkit-background-size: cover;
@@ -481,7 +486,7 @@ a:hover:after {
 }
 
 @media (min-width: 768px) { 
-    .svg-background {
+    .svg .svg-background {
         position:absolute;
         display: block;
         top: 0;
@@ -491,7 +496,8 @@ a:hover:after {
         display: block;
         z-index: -1;
     }
-    .section--overlay.section--sun-rays {
+
+    .svg .section--overlay.section--sun-rays {
         background: transparent;
     }
 }

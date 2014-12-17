@@ -1,16 +1,16 @@
 $(document).ready( function () {
 
 	var pleasingColors = Please.make_color({
-		colors_returned: 2, //set number of colors returned
+		colors_returned: 3, //set number of colors returned
 		value: .7 //set your value manually
 	});
 
 	$('.section__overlay--primary').css('background-color', pleasingColors[0]); //First Color
 	$('.section__overlay--secondary').css('background-color', pleasingColors[1]); //Second Color
-	$('.section__overlay--tertiary').css('background-color', pleasingColors[0]); //First Color
+	$('.section__overlay--tertiary').css('background-color', pleasingColors[2]); //First Color
 	
 	//btn color styles
-	$('<style>.btn--dark:hover { background-color: ' + pleasingColors[1] + '; border-color: ' + pleasingColors[1] + '; </style>').appendTo('head');
+	$('<style>.btn--dark:hover { background-color: ' + pleasingColors[2] + '; border-color: ' + pleasingColors[2] + '; </style>').appendTo('head');
 
 	//Hide Contact Form
 
