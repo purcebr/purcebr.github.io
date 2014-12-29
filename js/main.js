@@ -10,7 +10,7 @@ $(document).ready( function () {
 	$('.section__overlay--tertiary').css('background-color', pleasingColors[2]); //First Color
 	
 	//btn color styles
-	$('<style>.btn--dark:hover { background-color: ' + pleasingColors[2] + '; border-color: ' + pleasingColors[2] + '; </style>').appendTo('head');
+	$('<style>.btn--colored:hover { background-color: ' + pleasingColors[2] + '; border-color: ' + pleasingColors[2] + '; </style>').appendTo('head');
 
 	//Hide Contact Form
 
@@ -19,6 +19,11 @@ $(document).ready( function () {
 	$('.get-in-touch').click(function(e) {
 		contact.slideToggle();
 		$(this).toggleClass('btn--active');
+	});
+
+	$('#show-free-and-paid-section').click(function(e) {
+		e.preventDefault();
+		$("#free-and-paid-section").slideToggle();
 	});
 
 	$(function() {
