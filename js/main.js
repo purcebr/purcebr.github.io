@@ -12,20 +12,6 @@ $(document).ready( function () {
 	//btn color styles
 	$('<style>.btn--colored:hover { background-color: ' + pleasingColors[2] + '; border-color: ' + pleasingColors[2] + '; </style>').appendTo('head');
 
-	//Hide Contact Form
-
-	var contact = $('#contact').hide();
-
-	$('.get-in-touch').click(function(e) {
-		contact.slideToggle();
-		$(this).toggleClass('btn--active');
-	});
-
-	$('#show-free-and-paid-section').click(function(e) {
-		e.preventDefault();
-		$("#free-and-paid-section").slideToggle();
-	});
-
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

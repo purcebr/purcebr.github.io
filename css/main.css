@@ -112,7 +112,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Vollkorn', serif;
+    font-family: "freight-sans-pro", serif;
     margin-top: 0;
 }
 
@@ -130,7 +130,7 @@ h3 {
 
 label {
     display: block;
-    font-family: 'Vollkorn', serif;
+    font-family: 'freight-sans-pro', serif;
     font-size: 1.25rem;
 }
 
@@ -185,7 +185,7 @@ label.required:after {
     }
     label {
         display: block;
-        font-family: 'Vollkorn', serif;
+        font-family: 'freight-sans-pro', serif;
         font-size: 1.75rem;
     }
 }
@@ -197,7 +197,7 @@ label.required:after {
    body {
     background-color: rgb(244,189,109);
     color: #444;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'kepler-std', sans-serif;
     background-size: cover;
     background-color: #FFF;
 }
@@ -515,6 +515,7 @@ section {
 
 .section--footer {
     text-align: center;
+    padding: 1rem;
 }
 
 .section--footer a{
@@ -577,9 +578,9 @@ section {
 
 .section__social ul{
     padding: 0;
+    margin: 0;
     list-style: none;
-    text-align: justify;
-    font-size: 0.1px;
+    text-align: left;
 }
 
 .section__social .break{
@@ -588,18 +589,9 @@ section {
 }
 
 .section__social ul > li{
-    margin: 0 0 2rem 0;
     display: inline-block;
-    font-size: 2rem;
     width: 33.3%;
     text-align: center;
-}
-
-ul::after {
-    width: 100%; 
-    display: inline-block; 
-    content: "."; 
-    visibility: hidden
 }
 
 .section__social ul > li:last-child{
@@ -614,8 +606,6 @@ ul::after {
 
 @media (min-width: 768px) {
     .section__social ul > li{
-        margin: 0 2rem .5rem 0;
-        font-size: 2rem;
         width: inherit;
     }
     .section__social ul > li.blank{
