@@ -10,7 +10,7 @@ $(document).ready( function () {
 	$('.section__overlay--tertiary').css('background-color', pleasingColors[2]); //First Color
 	
 	//btn color styles
-	$('<style>.btn--colored:hover { background-color: ' + pleasingColors[2] + '; border-color: ' + pleasingColors[2] + '; </style>').appendTo('head');
+	$('<style>.btn--colored { border-color: ' + pleasingColors[0] + '; color: ' + pleasingColors[0] + '; } .btn--colored:hover { color: #FFF;background-color: ' + pleasingColors[0] + '; border-color: ' + pleasingColors[0] + '; }</style>').appendTo('head');
 
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {

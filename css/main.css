@@ -378,10 +378,11 @@ section {
    Button Styles
    ========================================================================== */
 
-
-   .btn {
+.btn {
     border: 2px solid #fff;
-    color: #fff !important;
+    color: #fff;
+    outline: 0 !important;
+    box-shadow: none;
     background: transparent;
     clear: both;
     width: 100%;
@@ -390,7 +391,6 @@ section {
     letter-spacing: 1px;
     margin: 20px 0;
     text-decoration: none;
-    border-radius: 5px;
     padding: 10px 20px;
     display: inline-block;
     text-shadow: none !important;
@@ -407,26 +407,18 @@ section {
     .btn--submit {
         max-width: 200px;
     }
-
 }
 
 .btn:after {
     border: 0 !important;
 }
 
-.btn:hover, .btn--active.btn {
-    color: #444 !important;
-    background-color: #FFF;
-}
-
 .btn--dark {
     border: 2px solid #222;
-    color: #333333 !important;
     box-shadow: none !important;
 }
 
 .btn--dark:hover {
-    color: #FFF !important;
     background-color: #333333;
     border-color: #333333;
 }
@@ -435,7 +427,7 @@ section {
    Shadows, so mysterious!
    ========================================================================== */
 
-   .section__shadow {
+.section__shadow {
     position:absolute;
     top: 0;
     right: 0;
@@ -590,18 +582,12 @@ section {
 
 .section__social ul > li{
     display: inline-block;
-    width: 33.3%;
     text-align: center;
+    margin-right: 1rem;
 }
 
 .section__social ul > li:last-child{
     margin-right: 0;
-}
-
-@media (min-width: 1024px) {
-    .section__social ul > li{
-        margin-right: 1rem;
-    }
 }
 
 @media (min-width: 768px) {
@@ -670,6 +656,7 @@ section {
    ========================================================================== */
 
 input, textarea {
+    outline: 0 !important;
     width: 100%;
     background-color: #EFEFEF;
     border: 0;
