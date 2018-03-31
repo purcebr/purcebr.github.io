@@ -117,7 +117,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
 }
 
 h2 {
@@ -173,7 +173,7 @@ label.required:after {
         line-height: 2.5rem;
     }
     h1 {
-        font-size: 2.75rem; 
+        font-size: 3.5rem; 
     }
 
     h2 {
@@ -353,7 +353,7 @@ section {
 @media (min-width: 1024px) { 
 
     .row {
-        max-width: 800px;
+        max-width: 1180px;
     }
 }
 
@@ -570,38 +570,14 @@ section {
 
 .section__social ul{
     padding: 0;
-    margin: 0;
     list-style: none;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.section__social .break{
-    width: 100%;
-    height: 0;
-}
-
-.section__social ul > li{
-    display: inline-block;
-    text-align: center;
-    margin-right: 1rem;
-}
-
-.section__social ul > li:last-child{
-    margin-right: 0;
-}
-
-@media (min-width: 768px) {
-    .section__social ul > li{
-        width: inherit;
-    }
-    .section__social ul > li.blank{
-        display: none;
-    }
-
-}
-
-
-.section__social ul > li a {
+.section__social ul li a {
     padding: 10px;
     background-color: #333;
     border-radius: 5px;
@@ -616,12 +592,12 @@ section {
     left: -5px;
 }
 
-.section__social ul > li a:hover {
+.section__social ul li a:hover {
     color: #FFF;
     background-color: #494949;
 }
 
-.section__social ul > li a:after{
+.section__social ul li a:after{
     border: none;
 }
 
@@ -641,6 +617,13 @@ section {
     opacity: .95;
     z-index: 0;
     background-color: #333;
+}
+
+.section--head {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
