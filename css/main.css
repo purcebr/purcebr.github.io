@@ -169,11 +169,11 @@ label.required:after {
 @media (min-width: 1024px) {
     p {
         margin:0rem 0 2rem 0;
-        font-size: 1.50rem;
+        font-size: 2.50rem;
         line-height: 2.5rem;
     }
     h1 {
-        font-size: 3.5rem; 
+        font-size: 4rem; 
     }
 
     h2 {
